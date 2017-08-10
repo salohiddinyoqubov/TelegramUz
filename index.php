@@ -5,6 +5,7 @@
  * Date: 10.08.2017
  * Time: 12:12
  */
+
 function sendMessage($chat_id, $message)
     {
         file_get_contents($GLOBALS['api'] . '/sendMessage?chat_id=' . $chat_id . '&text=' . urlencode($message));
