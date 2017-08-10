@@ -6,4 +6,17 @@
  * Time: 12:12
  */
 $output = file_get_contents("php://input");
-file_put_contents("logs.txt", $output);
+$input = file_put_contents("logs.txt", $output);
+if($output){
+    echo "Output ok";
+}
+else{
+    echo "Output no";
+
+}
+if($input){
+    echo "inputut ok";
+}
+else{
+    echo "input no";
+}
