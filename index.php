@@ -11,7 +11,7 @@ function sendMessage($chat_id, $message)
         file_get_contents($GLOBALS['api'] . '/sendMessage?chat_id=' . $chat_id . '&text=' . urlencode($message));
     }
 
-	$access_token = 'YOUR TOKEN';
+	$access_token = '417197977:AAEwjr89xwjtzddLaXwgg7CIv4MHGQfUrcA';
 	$api = 'https://api.telegram.org/bot' . $access_token;
 
 
@@ -20,6 +20,6 @@ function sendMessage($chat_id, $message)
 	$first_name = $output['message']['chat']['first_name'];
 	$message = $output['message']['text'];
 
-	$preload_text = $first_name . ', я получила ваше сообщение!';
+	$preload_text = $first_name . ', Men sizning xabaringizni oldim!';
 	sendMessage($chat_id, $preload_text);
 ?>
