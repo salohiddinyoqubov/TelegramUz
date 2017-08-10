@@ -5,7 +5,6 @@
  * Date: 10.08.2017
  * Time: 13:03
  */
-<?php
 	function regHandler($cert, $token, $murl)
     {
         $url = "https://api.telegram.org/bot" . $token . "/setWebhook";
